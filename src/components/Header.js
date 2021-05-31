@@ -3,7 +3,7 @@ const Header = () => {
   // Print Header value
   return (
     <div>
-      <h1>Do you wanna ToDo something?</h1>
+      <h1>Do you wanna add something To-Do?</h1>
     </div>
   );
 };
