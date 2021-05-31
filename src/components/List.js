@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 const List = (props) => {
   // useState
   const [userInput, setUserInput] = useState("");
+  const placeholder = "Please add a ToDo";
 
   // changeHandle function
   function changeHandle(e) {
@@ -33,7 +34,12 @@ const List = (props) => {
   // Return the result for the form and the input's
   return (
     <form onSubmit={submitHandle}>
-      <input type="text" value={userInput} onChange={changeHandle} />
+      <input
+        type="text"
+        value={userInput}
+        onChange={changeHandle}
+        placeholder={placeholder}
+      />
       <input type="submit" value="Add" />
     </form>
   );
