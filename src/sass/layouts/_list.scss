@@ -6,5 +6,7 @@ ul {
   li {
     margin: 1em;
     color: $yellow;
+    @include flex;
+    justify-content: space-between;
   }
 }
